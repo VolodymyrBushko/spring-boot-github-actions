@@ -15,7 +15,7 @@ jobs:
         run: node --version
   print-aws-version:
     name: Print AWS CLI version JOB
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest1
     needs: [ print-nodejs-version ]
     steps:
       - name: Print AWS CLI version STEP
