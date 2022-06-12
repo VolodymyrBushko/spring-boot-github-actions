@@ -1,0 +1,21 @@
+name: Workflow-1
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  print-nodejs-version:
+    name: Print NodeJS version JOB
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print NodeJS version STEP
+        run: echo node --version
+  print-aws-version:
+    name: Print AWS CLI version JOB
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print AWS CLI version STEP
+        run: echo aws --version
