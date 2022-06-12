@@ -1,0 +1,13 @@
+name: Workflow-2
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  print-git-version:
+    name: Print Git version JOB
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Git version STEP
+        run: git --version
