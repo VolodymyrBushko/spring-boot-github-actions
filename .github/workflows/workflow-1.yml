@@ -12,10 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print NodeJS version STEP
-        run: echo node --version
+        run: node --version
   print-aws-version:
     name: Print AWS CLI version JOB
     runs-on: ubuntu-latest
     steps:
       - name: Print AWS CLI version STEP
-        run: echo aws --version
+        run: aws --version
